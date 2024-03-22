@@ -21,8 +21,11 @@ export const unstable_settings = {
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  // Import fonts
   const [loaded, error] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Fontello: require('../assets/fonts/Fontello.ttf'),
+    SignPainter: require('../assets/fonts/SignPainter.ttf'),
     ...FontAwesome.font,
   });
 
